@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+</head>
+<body>
+	<h1>Counter</h1>
+	<p>Count: <span id="count">0</span></p>
+	<button onclick="increment()">Increment</button>
+	<button onclick="decrement()">Decrement</button>
+    <!-- button onclick="multiplyByFive()">multiplyByFive</button-->
+
+	<script>
+		// initialize count variable
+		let count = 0;
+
+		// get reference to count span element
+		let countSpan = document.getElementById("count");
+
+		// define increment and decrement functions
+		function increment() {
+			count++;
+			countSpan.innerText = count;
+		}
+
+		function decrement() {
+			count--;
+			countSpan.innerText = count;
+		}
+
+       /* function multiplyByFive(){
+            countSpan.innerText=count*5;
+        }*/
+	</script>
+</body>
+</html>
